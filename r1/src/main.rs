@@ -1,3 +1,4 @@
+mod compound_types;
 mod shadowing;
 // Import only the function that I want
 // use shadowing::shadowing;
@@ -9,5 +10,6 @@ fn main() {
     let spaces = spaces.len();
     println!("spaces: {spaces}");
 
-    shadowing::shadowing()
+    compound_types::compound();
+    shadowing::shadowing();
 }
